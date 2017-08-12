@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/phayes/geoPHP.svg?branch=master)](https://travis-ci.org/phayes/geoPHP)
+[![Build Status](https://travis-ci.org/lesha888/geoPHP.svg?branch=master)](https://travis-ci.org/lesha888/geoPHP)
 
 [geophp.net](https://geophp.net "GeoPHP homepage")
 
