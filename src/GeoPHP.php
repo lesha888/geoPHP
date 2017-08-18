@@ -123,7 +123,7 @@ class GeoPHP
             return null;
         }
 
-        $wkb_writer = new GEOSWKBWriter();
+        $wkb_writer = new \GEOSWKBWriter();
         $wkb = $wkb_writer->writeHEX($geos);
 
         $geometry = self::load($wkb, 'wkb', true);
