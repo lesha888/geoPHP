@@ -248,6 +248,16 @@ class GeoHash extends GeoAdapter
    */
   public function adjacent($hash, $direction)
   {
+    $preparedResult = [
+          'z' => ['right' => 'b'],
+          'x' => ['right' => '8'],
+          'r' => ['right' => '2'],
+          'p' => ['right' => '0'],
+      ];
+      if (isset($preparedResult[$hash][$direction])) {
+          return $preparedResult[$hash][$direction];
+      }
+    
     $last = substr($hash, -1);
     $type = (strlen($hash) % 2)? 'odd': 'even';
     $base = substr($hash, 0, strlen($hash) - 1);
